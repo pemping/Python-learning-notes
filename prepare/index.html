@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>基本准备 - Pemp</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u57fa\u672c\u51c6\u5907";
+        var mkdocs_page_input_path = "prepare.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Pemp
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">基本准备</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#vscode">Vscode环境准备</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#vscode-git">设置Vscode git</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mkdocs">使用Mkdocs生成学习笔记</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Flask使用</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../quickstart/">Flask安装</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">FastAPI使用</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../fastapi/">FastAPI安装</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Pemp</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>基本准备</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">基本准备</h1>
+<h2 id="vscode">Vscode环境准备</h2>
+<p>Pycharm 专业版收费，社区版又不能开发Web，因此，选用免费、开源、轻量、便捷的Vscode。<br />
+在安装Vscode、Python等软件后，首先打开Vscode的“终端--新建终端”。  </p>
+<ol>
+<li>
+<p>终端操作<br />
+<code>终端常用命令
+    mkdir 文件夹名称    #创建文件夹
+    cd 文件夹名称       #转到创建的文件夹
+    此外：  
+    cd ..              #跳转到上一级文件夹
+    clear              #清除屏幕</code></p>
+</li>
+<li>
+<p>生成虚拟环境<br />
+<code>使用虚拟环境安装依赖
+    python -m venv env      #生成虚拟环境  
+    env\scripts\activate    #激活虚拟环境</code>  </p>
+</li>
+<li>
+<p>安装Flask<br />
+<code>pip install Flask</code></p>
+</li>
+</ol>
+<h2 id="vscode-git">设置Vscode git</h2>
+<ol>
+<li>
+<p>下载并安装git<br />
+<a href="https://git-scm.com/">git官网</a>  </p>
+</li>
+<li>
+<p>配置git<br />
+<img alt="" src="../img/git.png" />    </p>
+<p>在输入框中输入 git.path ，打开 settings.json 文件
+<img alt="" src="../img/git2.png" />  </p>
+<p>在 settings.json 文件中，添加 git 的安装路径<br />
+<img alt="" src="../img/git3.png" />   </p>
+<p>然后关闭 VScode ，再次打开，过几秒钟后，点击左侧的第3个图标，也就是下图的第一个地方，发现第2和第3个地方变成了可点击状态，不是暗色的，表明git环境配置成功。<br />
+<img alt="" src="../img/git4.png" />  </p>
+</li>
+</ol>
+<h2 id="mkdocs">使用Mkdocs生成学习笔记</h2>
+<ol>
+<li>
+<p>安装Mkdocs<br />
+<code>pip install mkdocs
+    mkdocs new my-project
+    mkdocs build  #创建文档
+    mkdocs serve  #启动服务器</code><br />
+    使用“Ctrl+C”可以关闭服务器  </p>
+</li>
+<li>
+<p>使用git将笔记推送到github
+    使用ctrl+shift+P并输入git,选择“初始化存储库”<br />
+    ```</p>
+<p>```  </p>
+</li>
+<li>
+<p>在Gitpage部署<br />
+<code>mkdocs gh-deploy</code>  </p>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../quickstart/" class="btn btn-neutral float-right" title="Flask安装">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../quickstart/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
