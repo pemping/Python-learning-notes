@@ -47,12 +47,24 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">基本准备</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#vscode">Vscode环境准备</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#vscode-git">设置Vscode git</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mkdocs">使用Mkdocs生成学习笔记</a>
+    </li>
     </ul>
                 </li>
               </ul>
+              <p class="caption"><span class="caption-text">Flask使用</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../quickstart/">快速上手</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../quickstart/">Flask安装</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">FastAPI使用</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../fastapi/">FastAPI安装</a>
+                  </li>
               </ul>
       </div>
     </div>
@@ -77,13 +89,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="vscode">Vscode环境准备</h2>
+                <h1 id="_1">基本准备</h1>
+<h2 id="vscode">Vscode环境准备</h2>
 <p>Pycharm 专业版收费，社区版又不能开发Web，因此，选用免费、开源、轻量、便捷的Vscode。<br />
 在安装Vscode、Python等软件后，首先打开Vscode的“终端--新建终端”。  </p>
 <ol>
 <li>
 <p>终端操作<br />
-<code>mkdir 文件夹名称    #创建文件夹
+<code>终端常用命令
+    mkdir 文件夹名称    #创建文件夹
     cd 文件夹名称       #转到创建的文件夹
     此外：  
     cd ..              #跳转到上一级文件夹
@@ -91,7 +105,8 @@
 </li>
 <li>
 <p>生成虚拟环境<br />
-<code>python -m venv env      #生成虚拟环境  
+<code>使用虚拟环境安装依赖
+    python -m venv env      #生成虚拟环境  
     env\scripts\activate    #激活虚拟环境</code>  </p>
 </li>
 <li>
@@ -118,19 +133,23 @@
 </ol>
 <h2 id="mkdocs">使用Mkdocs生成学习笔记</h2>
 <ol>
-<li>安装Mkdocs<br />
+<li>
+<p>安装Mkdocs<br />
 <code>pip install mkdocs
     mkdocs new my-project
     mkdocs build  #创建文档
-    mkdocs serve  #启动服务器</code>
-    使用“Ctrl+C”可以关闭服务器</li>
+    mkdocs serve  #启动服务器</code><br />
+    使用“Ctrl+C”可以关闭服务器  </p>
+</li>
 <li>
 <p>使用git将笔记推送到github
-    使用ctrl+shift+P并输入git,选择“初始化存储库”
+    使用ctrl+shift+P并输入git,选择“初始化存储库”<br />
     ```</p>
-<p><code>3. 在Gitpage部署</code>
-mkdocs gh-deploy
-```  </p>
+<p>```  </p>
+</li>
+<li>
+<p>在Gitpage部署<br />
+<code>mkdocs gh-deploy</code>  </p>
 </li>
 </ol>
               
@@ -138,7 +157,7 @@ mkdocs gh-deploy
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../quickstart/" class="btn btn-neutral float-right" title="快速上手">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../quickstart/" class="btn btn-neutral float-right" title="Flask安装">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
