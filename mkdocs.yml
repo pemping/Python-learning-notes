@@ -1,0 +1,13 @@
+site_name: Pemp
+docs_dir: docs
+nav:
+    - Home: index.md
+    - 基本准备: prepare.md
+      # - 使用Vscode建立环境: vscode.md
+      # - 建立学习笔记: mkdocs.md
+    - Flask使用:
+      - Flask安装: quickstart.md
+    # - 快速上手: quickstart.md
+    - FastAPI使用:
+      - FastAPI安装: fastapi.md
+theme: readthedocs
