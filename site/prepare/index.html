@@ -110,8 +110,9 @@
     env\scripts\activate    #激活虚拟环境</code>  </p>
 </li>
 <li>
-<p>安装Flask<br />
-<code>pip install Flask</code></p>
+<p>安装包<br />
+<code>pip install XXX</code>
+    <code>pip list  #查看安装列表</code></p>
 </li>
 </ol>
 <h2 id="vscode-git">设置Vscode git</h2>
@@ -134,12 +135,17 @@
 <h2 id="mkdocs">使用Mkdocs生成学习笔记</h2>
 <ol>
 <li>
-<p>安装Mkdocs<br />
-<code>pip install mkdocs
-    mkdocs new my-project
-    mkdocs build  #创建文档
-    mkdocs serve  #启动服务器</code><br />
-    使用“Ctrl+C”可以关闭服务器  </p>
+<p>安装Mkdocs  </p>
+<pre><code>pip install mkdocs
+mkdocs new my-project
+mkdocs build  #创建文档
+
+# MkDocs 包含了一个内建的服务器，可以在本地预览当前文档。在项目文件夹下打开命令提示符，执行mkdocs serve命令就可以启动内建服务器
+mkdocs serve  #启动服务器
+执行成功后，在浏览器打开 http://127.0.0.1:8000/，就可以看到页面的样子啦！
+
+#使用“Ctrl+C”可以关闭服务器
+</code></pre>
 </li>
 <li>
 <p>使用git将笔记推送到github
@@ -148,8 +154,9 @@
 <p>```  </p>
 </li>
 <li>
-<p>在Gitpage部署<br />
-<code>mkdocs gh-deploy</code>  </p>
+<p>在Gitpage部署  </p>
+<pre><code>mkdocs gh-deploy
+</code></pre>
 </li>
 </ol>
               

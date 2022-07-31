@@ -21,8 +21,9 @@ Pycharm 专业版收费，社区版又不能开发Web，因此，选用免费、
     env\scripts\activate    #激活虚拟环境  
     ```  
         
-3. 安装Flask  
-    `pip install Flask`
+3. 安装包  
+    `pip install XXX`
+    `pip list  #查看安装列表`
 
 ## 设置Vscode git
 
@@ -44,24 +45,36 @@ Pycharm 专业版收费，社区版又不能开发Web，因此，选用免费、
 ## 使用Mkdocs生成学习笔记
 
 1. 安装Mkdocs  
-    ```
-    pip install mkdocs
-    mkdocs new my-project
-    mkdocs build  #创建文档
-    mkdocs serve  #启动服务器
-    ```  
-    使用“Ctrl+C”可以关闭服务器  
+    
+        pip install mkdocs
+        mkdocs new my-project
+        mkdocs build  #创建文档
+
+        # MkDocs 包含了一个内建的服务器，可以在本地预览当前文档。在项目文件夹下打开命令提示符，执行mkdocs serve命令就可以启动内建服务器
+        mkdocs serve  #启动服务器
+        执行成功后，在浏览器打开 http://127.0.0.1:8000/，就可以看到页面的样子啦！
+    
+        #使用“Ctrl+C”可以关闭服务器  
 
 2. 使用git将笔记推送到github
     使用ctrl+shift+P并输入git,选择“初始化存储库”  
-    ```
     
-    ```  
+    ![新建库](img/新建库.png)  
+    点击“New”
+
+    ![新建库](img/新建库2.png)
+    点击“Creat repository”
+
+    ![新建库](img/新建库3.png)
+    按照提示操作，命令意义如下：[Git远程操作命令](https://www.ruanyifeng.com/blog/2014/06/git_remote.html)
+
+
+
 
 3. 在Gitpage部署  
-    ```
-    mkdocs gh-deploy
-    ```  
+        
+        mkdocs gh-deploy
+     
 
 
 
