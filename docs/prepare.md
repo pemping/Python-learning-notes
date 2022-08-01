@@ -68,6 +68,7 @@ Pycharm 专业版收费，社区版又不能开发Web，因此，选用免费、
     ![新建库](img/新建库3.png)
     按照提示操作，命令意义如下：[Git远程操作命令](https://www.ruanyifeng.com/blog/2014/06/git_remote.html)
 
+    Vscode中的git使用方法：[Vscode中的git使用方法](https://zhuanlan.zhihu.com/p/276376558)
 
 3. 在Gitpage部署  
         
